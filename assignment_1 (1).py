@@ -12,7 +12,7 @@ Original file is located at
 """
 
 s = "Hi there Sam!"
-a = s.split()
+a=s.split()
 print(a)
 
 
@@ -24,7 +24,7 @@ print(a)
 
 planet = "Earth"
 diameter = 12742
-txt="The diameter of {} is {} kilometers".format(planet,diameter)
+txt="The dimeter of{} is{} kilometer".format(planet,diameter)
 print(txt)
 
 
@@ -71,7 +71,7 @@ print(matrix)
 """
 
 import numpy as np
-a=np.array([1,2,3,])
+a=np.array([1,2,3])
 b=np.array([4,5,6])
 con=np.concatenate([a,b])
 print(con)
@@ -91,7 +91,7 @@ print(df)
 """## 9. Generate the series of dates from 1st Jan, 2023 to 10th Feb, 2023"""
 
 import pandas as pd
-date=pd.date_range(start='01-01-2023',end='01-10-2023')
+date=pd.date_range(start='01-01-2023',end='02-10-2023')
 print(date)
 
 """## 10. Create 2D list to DataFrame
@@ -102,6 +102,8 @@ lists = [[1, 'aaa', 22],
 """
 
 lists = [[1, 'aaa', 22], [2, 'bbb', 25], [3, 'ccc', 24]]
+
+import pandas as pd
+lists=[[1,'aaa',22],[2,'bbb',25],[3,'ccc',24]]
 df=pd.DataFrame(lists,columns=['SI.NO','Name','Number'])
 print(df)
-
